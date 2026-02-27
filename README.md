@@ -4,7 +4,7 @@
 
 ## 🎬 Demo
 
-> 🌐 **Live Site:** https://bulletguitarist.github.io/AI-NEXUS-NEWS/
+> 🌐 **Live Site:** https://nexus-ai-live.vercel.app/
 
 ---
 
