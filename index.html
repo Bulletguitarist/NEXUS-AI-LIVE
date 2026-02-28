@@ -561,21 +561,21 @@ function drawFrame(){
   // Tie — blue
   cx.fillStyle='#1a6fb5';cx.beginPath();cx.moveTo(ox-5*sc,oy+84*sc);cx.lineTo(ox+5*sc,oy+84*sc);cx.lineTo(ox+8*sc,oy+160*sc);cx.lineTo(ox,oy+172*sc);cx.lineTo(ox-8*sc,oy+160*sc);cx.closePath();cx.fill();
   // Neck
-  const ng=cx.createLinearGradient(ox-18*sc,oy+70*sc,ox+18*sc,oy+70*sc);ng.addColorStop(0,'#2a1508');ng.addColorStop(.5,'#5a3018');ng.addColorStop(1,'#2a1508');cx.fillStyle=ng;cx.fillRect(ox-18*sc,oy+70*sc,36*sc,55*sc);
+  const ng=cx.createLinearGradient(ox-18*sc,oy+70*sc,ox+18*sc,oy+70*sc);ng.addColorStop(0,'#e8b888');ng.addColorStop(.5,'#f5cca8');ng.addColorStop(1,'#e8b888');cx.fillStyle=ng;cx.fillRect(ox-18*sc,oy+70*sc,36*sc,55*sc);
 
   // Head glow — softer blue on light bg
   const ga=.08+Math.sin(glo)*.03;
   cx.shadowColor=speaking?`rgba(26,111,181,${ga*3})`:`rgba(26,111,181,${ga})`;
   cx.shadowBlur=speaking?35*sc:14*sc;
   const hG=cx.createRadialGradient(ox-18*sc,oy-35*sc,8*sc,ox,oy,92*sc);
-  hG.addColorStop(0,'#7a4530');hG.addColorStop(.4,'#5a3020');hG.addColorStop(.8,'#3d1e10');hG.addColorStop(1,'#1a0a05');
+  hG.addColorStop(0,'#ffe0c0');hG.addColorStop(.4,'#f5c898');hG.addColorStop(.8,'#e8b078');hG.addColorStop(1,'#d49060');
   cx.fillStyle=hG;cx.beginPath();cx.ellipse(ox,oy,82*sc,98*sc,0,0,Math.PI*2);cx.fill();cx.shadowBlur=0;
 
   // Hair
   const haiG=cx.createLinearGradient(ox-85*sc,oy-110*sc,ox+85*sc,oy-55*sc);haiG.addColorStop(0,'#050505');haiG.addColorStop(.5,'#1a1a1a');haiG.addColorStop(1,'#050505');cx.fillStyle=haiG;cx.beginPath();cx.ellipse(ox,oy-55*sc,85*sc,52*sc,0,Math.PI,0);cx.fill();
 
   // Ears
-  for(let s=-1;s<=1;s+=2){const eG=cx.createRadialGradient(ox+s*86*sc,oy+8*sc,2*sc,ox+s*86*sc,oy+8*sc,16*sc);eG.addColorStop(0,'#7a4530');eG.addColorStop(1,'#2a1008');cx.fillStyle=eG;cx.beginPath();cx.ellipse(ox+s*86*sc,oy+8*sc,11*sc,19*sc,s*.15,0,Math.PI*2);cx.fill();}
+  for(let s=-1;s<=1;s+=2){const eG=cx.createRadialGradient(ox+s*86*sc,oy+8*sc,2*sc,ox+s*86*sc,oy+8*sc,16*sc);eG.addColorStop(0,'#ffd8b0');eG.addColorStop(1,'#e8b888');cx.fillStyle=eG;cx.beginPath();cx.ellipse(ox+s*86*sc,oy+8*sc,11*sc,19*sc,s*.15,0,Math.PI*2);cx.fill();}
 
   // Eyes
   for(let s=-1;s<=1;s+=2){const ex=ox+s*29*sc,ey=oy-20*sc,bs=1-blink;
