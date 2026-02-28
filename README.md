@@ -4,7 +4,7 @@
 
 ## 🎬 Demo
 
-> 🌐 **Live Site:** https://nexus-ai-live.vercel.app/
+> 🌐 **Live Site:** https://nexus-dun-nine.vercel.app/
 
 ---
 
